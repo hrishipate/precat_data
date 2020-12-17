@@ -1,0 +1,31 @@
+1. create workspace folder P85 in home directory in linux (or on on any drive on windows) to save projects. 
+
+2. open eclipse by doble click on eclipse shortcut from desktop. (or double click on executable application from the eclipse folder). select the P95 folder by clicking on browse button then click on launch button.
+
+3. close welcome screen of eclipse and (select c/cpp perspective by clicking on window ->open perspective -> other menu  by default perspective is for java)
+
+4. click on file --> New ->> C/C++Project ----> select C Managed Build  and click on next button.
+
+6. Type project name like Demo1 and select hellow world ANSI C Hellow world project from project type -> executable menu.
+select toolchain Linux GCC for Linux (MinGW GCC for Windows)
+then click on next buttton 
+then type author name in author and click on finished 
+
+7. click on ctrl + s to save project 
+
+8. press ctrl + b to build project.
+
+9. press ctrl + f11 + ( function key for laptops) to run project.
+
+10.check output in console window.
+
+
+11. to change font size click on window ----> Preferences menu. 
+    click on editor from  c/c++.
+    click on Text Editors link from c/c++ Editor Preferences.
+    click on colors and fonts link to configure fonts.
+    click on Text Font and click on edit button seelct font family size and style.
+    and click on ok button and apply button and ok button.
+
+
+

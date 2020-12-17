@@ -1,0 +1,94 @@
+- How long is an IPv4 address?
+a. 32 bits.
+b. 128 bytes.
+c. 32 bytes.
+d. 48 bits.
+e. 128 bits.
+
+- What is the Subnet Mask for class C 95 hosts (further ip addresses are reserved for creating subnet)?
+A. 255.255.255.0
+B. 255.255.255.224
+C. 255.255.255.95
+D. 255.255.255.254
+E. 255.255.255.128
+
+- Which class of IP address provides a maximum of only 255 address per network ID?
+A. Class A
+B. Class B
+C. Class C
+D. Class D
+E. Class E
+
+- What is the network Address for a host with the ip address 10.75.100.140 255.255.0.0?
+A. 10.74.0.0
+B. 10.254.0.0
+C. 10.2.0.0
+D. 10.75.0.0
+
+- To test the IP stack on your local host (same machine), which IP address would you ping?	
+A. 172.0.1.1
+B. 127.0.0.0
+C. 255.255.255.255
+D. 127.0.0.1
+
+- The Network address of Class B with subnet mask 255.255.224.0 provides how many bits for subnets and how many bits for hosts?
+A. 3bits for subnets, 13bits for host 
+B. 13bits for subnets, 4bits for host
+C. 19bits for subnets, 13bits for host
+D. 16bits for subnets, 10bits for host
+E. 3bits for subnets, 10bits for host
+
+- The Network address of Class C with subnet mask 255.255.255.224 provides how many bits for subnets and how many bits for hosts?
+
+- Which of the following is function of routers ?
+A. segment.
+B. Bits
+C. Framing.
+D. IP routing
+
+- Which are the multicast addresses? 
+A. Class A
+B. Class B
+C. Class C
+D. Class D
+E. Class E
+
+- Which class provides the largest number of hosts per network?
+A. Class A
+B. Class B
+C. Class C
+D. Class D
+E. Class E
+
+- ARP is used to find
+A. Physical address from Logical address
+B. Logical address from Physical address
+C. Both A and B
+D. None of the above
+
+- Find the wrong IPv4 address from the following
+A. 75.45.0.14
+B. 111.56.345.78
+C. 221.34.7.8
+D. None of the above
+
+- What is the class of 152.5.15.111 IP address?
+A. class B
+B. class A
+C. class D
+D. class E
+
+- Which of the following device eliminates the broacast domain from network?
+A. Router
+B. Switch
+C. Hub
+D. All of the above
+
+
+
+
+
+
+
+
+

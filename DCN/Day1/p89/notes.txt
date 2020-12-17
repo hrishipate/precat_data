@@ -1,0 +1,248 @@
+* Network
+
+* introduction 
+- connecting multiple entities (computer/device/human) together
+- to share the data (information)
+- internet: network of networks
+- devices
+  - home appliances
+    - smart fridge 
+    - smart washing machine
+    - smart coffee machine
+  - personal devices
+    - mobile
+      - smart car (auto)
+        - tesla
+      - smart speaker
+        - apple: homepod (siri)
+        - amazon: echo device (alexa)
+      - to make the older tv smart
+        - Apple TV: tvOS
+        - roku, nvidia shield pro, amazon firetv stick: android tv
+      - smart TV
+        - samsung, sony: android tv
+        - LG: WebOS
+      - smart watch
+        - Apple Watch: watchOS
+        - xiomi, asus: android wear
+        - samsung: tizen
+      - cell phone
+        - basic phone / feature phone
+          - make and receive a phone call
+          - send and receive SMSs
+          - listen to FM radio
+          - play games like snakes
+        - smart phone
+          - android
+            - Amazon FireOS
+            - Oxygen OS
+          - Oak OS
+          - Apple iOS
+          - windows phone OS
+          - blackberry OS
+          - Symbian
+          - MeeMo
+          - MeeGo
+          - Tizen
+          - Bada
+          - firefox mobile OS
+          - ubuntu mobile OS
+          - embedded linux
+          - PalmOS
+          - WebOS
+
+
+* units
+- b: bits
+- B: Bytes
+
+
+* types
+
+- wired
+  - medium: wire/cable
+  - cables
+    - co-axial
+      - electrical signal
+    - cat cable (TP)
+      - cat: category
+      - also called as twisted pairs cables 
+      - electrical signal
+      - types
+        - stp: shielded twisted pairs
+        - utp: un-shielded twisted pairs
+      - version
+        - cat 1 : used for telephony
+        - cat 2 : 1     mbps
+        - cat 3 : 10    mbps
+        - cat 4 : 16    mbps
+        - cat 5 : 100   mbps 
+        - cat 5e: 125   mbps
+        - cat 6 : 1000  mbps ~ 1  gbps
+        - cat 6a: 1000  mbps ~ 1  gbps
+        - cat 7 : 10000 mbps ~ 10 gbps
+        - cat 7u: 20000 mbps ~ 20 gbps
+        - cat 8 : NA 
+    - optical fiber
+      - glass core
+      - light
+
+  - types
+    - LAN
+      - Local Area Network
+      - spans across floors within building
+    - MAN
+      - Metropolitan Area Network
+      - spans across city
+    - WAN
+      - Wide Area Network
+      - spans across cities, states, countries etc
+    - CAN
+      - Campus Area Network
+      - network given by an orgnization/company/institute etc.
+
+
+- wireless 
+  - medium: air (EM waves)
+
+
+* connectors
+- T-connector: with co-axial cable
+- RJ45 connector: used with cat cable 
+- RJ11 connector: used for telephony
+- types
+  - male
+  - female
+
+
+* topology
+- physical arrangement of the devices 
+- types
+  - bus
+  - ring
+  - connected ring
+  - star (*)
+  - mesh
+
+
+* smart device
+- device with its own OS
+  
+
+* hub/switch/router
+
+- hub
+  - used to create LAN
+  - is a physical (Layer 1) device
+  - does not understand any addressing scheme
+  - concerned with only the electrical signals
+  - repeats the signal coming from one port to all the remaining ports
+  - increases the traffic 
+  - more collision
+  - more data will be lost
+  - degrade the performance
+
+- switch
+  - used to create LAN
+  - is a data link (Layer 2) layer device
+  - is a smart device
+  - OS
+    - Cisco  : Ios
+    - Juniper: JunOS
+  - understands the MAC address 
+  - OS in switch maintain a MAC address table
+  - performance is better than Hub
+
+- router
+  - used to create WAN
+
+
+* casting
+- unicasting  : sending to ONLY ONE device
+- multicasting: sending to multiple (but not all) devices 
+- broadcasting: sending to all the devices connected to the network
+
+
+* network interface card (NIC)
+  - contains the female network port (RJ45)
+  - types
+    - internal
+      - on-board (on motherboard)
+      - PCI internal NIC
+    - external 
+  - used to connect the device to the network
+  - converts 
+    - binary data to electrical signals
+    - electrical signals to binary data
+
+
+* addressing schemes
+
+- MAC address
+  - addressing scheme used on data link layer 
+  - media access control
+  - used to identify every NIC uniquely 
+  - flashed on the ROM part of the NIC
+  - CAN NOT BE CHANGED
+  - also known as
+    - read only address
+    - physical address
+    - real address
+    - ethernet address
+  - to find MAC address 
+    - windows: ipconfig /all
+    - linux/macOS: ifconfig
+
+  - e.g.
+    
+    78:4f:43:90:13:d0
+
+  - size: 6 bytes = 6 x 8 = 48 bits
+  - importance
+    - group of first 3 bytes:
+      - will identify the manufacturer 
+      - e.g. 78:4f:43
+      - use
+        - https://hwaddress.com
+    - group of last 3 bytes
+      - will identify the NIC uniquely
+      - e.g. 90:13:d0
+
+
+- IP address (***)
+
+
+
+* OSI model
+
+- application
+- presentation
+- session
+- transport
+- network
+- data link
+  - llc
+  - mac
+- physical
+
+
+* TCP/IP model
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

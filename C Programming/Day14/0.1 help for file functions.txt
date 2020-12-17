@@ -1,0 +1,80 @@
+   int fgetc(FILE *fp);
+	fgetc() reads the character at the current position and returns its ASCII value. Also fgetc() increments current position pointer to the next character in the file buffer. So next call to fgetc() will read the next character from the buffer. If fgetc() reads at the end of file it returns -1 (or some negative number). This value is defined as EOF in the stdio.h. 
+
+This character is written to destination file using fputc() function. Its
+prototype is given as:
+
+	int fputc(int ch, FILE *fp);
+
+This function returns the ASCII value of the same character passed to it.
+
+==================================================================================
+
+fgets() reads the string from the file. Its prototype is given as:
+
+char* fgets(char *buff, int size, FILE *fp);
+
+The first argument buff is string buffer of the size given as second argument size, where string from the file represented by fp will be read. 
+It reads characters from the file till new line character is reached.
+However it don’t read more than the or size-1 characters from the file. The last character in the string buffer is made null character. It returns address of string buffer buff where string is read. When fgets() reads a line, it moves current position pointer to the next character to be read. When fgets() reads at the end of the file, it returns NULL pointer. This string is then given to fputs() to write into destination file. 
+The prototype of fputs() is:
+
+int fputs(const char *buff, FILE *fp);
+
+The function writes string buff into file associated with fp. It returns the ASCII value of the last character written to the file.
+
+==================================================================================
+
+Formatted I/O
+
+The data can be stored in the file in well formatted manner. 
+The functions fprintf() and fscanf() are used to write or read the data from the text file using format specifiers. 
+These format specifiers are same as printf() and scanf() and The prototype for fprintf() and fscanf() is given as:
+
+int fprintf(FILE* fp, const char *format, ...);
+int fscanf(FILE* fp, const char *format, ...);
+
+Note that fprintf() and fscanf() are similarly to printf() and scanf() respectively. Both of these functions take additional argument FILE *fp, which represents associated file. fprintf() returns number of characters printed on the console, while fscanf() returns number of fields scanned from file. when fscanf() read at the end of file it returns EOF.
+
+==================================================================================
+
+The prototype of fwrite() is given as:
+
+size_t fwrite(const void *base, size_t size, size_t count, FILE *fp);
+
+This function writes any block of data addressed by first argument base. This data can be array of count (third argument) number of records, where each record has size given by second argument size. If there is single variable count can be given as 1. 
+The above code uses loop to write records one by one. However, this code can be replaced by the single line as:
+fwrite(data, sizeof(struct book), 4, fp);
+
+Remember that fwrite() returns the number of records written successfully into the file. So if the data is written properly, the return value of fwrite should be equal to count.
+
+
+The prototype of fread() is given as:
+
+size_t fread(void *base, size_t size, size_t count, FILE *fp);
+
+This function reads the block of data to some variable or array addressed by first argument base. It can read array of count (third argument) number of records from the file, where each record has size given by second argument size. To read the single record, count can be given as 1. When fread() reads a record, the current position pointer is moved to next record to be read. The above code uses loop to read data of structure variable one by one. However, this code can be replaced by the single line as:
+
+fread(data, sizeof(struct book), 4, fp);
+
+
+Remember that fread() returns the number of elements read successfully from the file. So if the data is read properly, the return value of fread() should be equal to count.
+
+==================================================================================
+File handling functions function or macro description
+
+freopen() 	Close existing file and open it again as another file.
+feof() 		Test for end of file for given FILE pointer
+fflush()    Flushes the buffer associated with given FILE pointer
+getc(), 
+putc()      Macro implementations for fgetc() and fputc() respectively
+getw(), 
+putw()      Read or write a word value in binary mode
+ferror()    Tests for the error and returns non-zero values as error codes
+rewind()    Repositions the current position pointer at the beginning of the file
+rename()    Renames a file
+remove()    Deletes a file
+
+
+
+

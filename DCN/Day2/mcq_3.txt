@@ -1,0 +1,96 @@
+- Which layer provides logical addressing those routers will use for path determination?
+A. Session layer.
+B. Transport layer.
+C. Data link layer.
+D. Network layer.
+
+- Which layer is represented by segments?
+A. Session layer.
+B. Transport layer.
+C. Data link layer.
+D. Network layer.
+
+- What is the application of HTTP?
+A. To transfer html files.	
+B. To connect to internet.
+C. To telnet hosts.	
+D. To provide security.
+
+- At which layer routers operate?
+A. Session Layer.
+B. Transport Layer.
+C. Network Layer.
+D. Data Link Layer.
+
+- At which layer repeaters operate?
+A. Physical Layer.
+B. Transport Layer.
+C. Network Layer.
+D. Data Link Layer.
+
+- At which layer switches operate?
+A. Session Layer.
+B. Transport Layer.
+C. Network Layer.
+D. Data Link Layer.
+
+- Segmentation of a data stream happens at which layer of the OSI Model?
+A. Physical Layer.
+B. Transport Layer.
+C. Network Layer.
+D. Data Link Layer.
+
+- What comes at data link layer?
+A. IP header.
+B. TCP header.
+C. MAC address.
+D. Port nos.
+
+- What is the purpose of the SMTP?
+A. To transfer the network information
+B. To transfer the commands
+C. To transfer the emails
+D. To transfer the files
+
+- What is the main difference between TCP and UDP?
+A. TCP does not give acknowledgement.
+B. TCP is connection less and UDP is connection oriented	
+C. TCP is reliable and UDP is unreliable.
+D. UDP uses authentication.
+
+- Which is the protocol that uses port no.80?
+A. DHCP.
+B. SMTP.	
+C. FTP.	
+D. HTTP.
+
+- Which of the following device takes data from one network device and forwards it to destination based on MAC address?
+A. Switch
+B. Router
+C. Hub
+D. Bridge
+
+- The ------- address must be referred to deliver a message to the correct application program running on a host.
+A. PORT
+B. IP
+C. Physical
+D. Logical
+
+- The Standard TCP port assigned for SSH server is --------
+A. 20
+B. 21
+C. 22
+D. 23
+
+- In FTP the port ---------- is used for the control connection.
+A. 21
+B. 22
+C. 23
+D. 24
+
+- The services of ------------ is used by DNS at well-known port 53.
+A. TCP
+B. UDP
+C. TCP or UDP
+D. None of the above
+

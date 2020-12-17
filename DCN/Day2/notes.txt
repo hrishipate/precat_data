@@ -1,0 +1,450 @@
+* Network
+
+* introduction 
+- connecting multiple entities (computer/device/human) together
+- to share the data (information)
+- network
+  - group or collection of hosts (IP address)
+- internet: network of networks
+- devices
+  - home appliances
+    - smart fridge 
+    - smart washing machine
+    - smart coffee machine
+  - personal devices
+    - mobile
+      - smart car (auto)
+        - tesla
+      - smart speaker
+        - apple: homepod (siri)
+        - amazon: echo device (alexa)
+      - to make the older tv smart
+        - Apple TV: tvOS
+        - roku, nvidia shield pro, amazon firetv stick: android tv
+      - smart TV
+        - samsung, sony: android tv
+        - LG: WebOS
+      - smart watch
+        - Apple Watch: watchOS
+        - xiomi, asus: android wear
+        - samsung: tizen
+      - cell phone
+        - basic phone / feature phone
+          - make and receive a phone call
+          - send and receive SMSs
+          - listen to FM radio
+          - play games like snakes
+        - smart phone
+          - android
+            - Amazon FireOS
+            - Oxygen OS
+          - Oak OS
+          - Apple iOS
+          - windows phone OS
+          - blackberry OS
+          - Symbian
+          - MeeMo
+          - MeeGo
+          - Tizen
+          - Bada
+          - firefox mobile OS
+          - ubuntu mobile OS
+          - embedded linux
+          - PalmOS
+          - WebOS
+
+
+* units
+- b: bits
+- B: Bytes
+
+
+* types
+
+- wired
+  - medium: wire/cable
+  - cables
+    - co-axial
+      - electrical signal
+    - cat cable (TP)
+      - cat: category
+      - also called as twisted pairs cables 
+      - electrical signal
+      - types
+        - stp: shielded twisted pairs
+        - utp: un-shielded twisted pairs
+      - version
+        - cat 1 : used for telephony
+        - cat 2 : 1     mbps
+        - cat 3 : 10    mbps
+        - cat 4 : 16    mbps
+        - cat 5 : 100   mbps 
+        - cat 5e: 125   mbps
+        - cat 6 : 1000  mbps ~ 1  gbps
+        - cat 6a: 1000  mbps ~ 1  gbps
+        - cat 7 : 10000 mbps ~ 10 gbps
+        - cat 7u: 20000 mbps ~ 20 gbps
+        - cat 8 : NA 
+    - optical fiber
+      - glass core
+      - light
+
+  - types
+    - LAN
+      - Local Area Network
+      - spans across floors within building
+    - MAN
+      - Metropolitan Area Network
+      - spans across city
+    - WAN
+      - Wide Area Network
+      - spans across cities, states, countries etc
+    - CAN
+      - Campus Area Network
+      - network given by an orgnization/company/institute etc.
+
+
+- wireless 
+  - medium: air (EM waves)
+
+
+* connectors
+- T-connector: with co-axial cable
+- RJ45 connector: used with cat cable 
+- RJ11 connector: used for telephony
+- types
+  - male
+  - female
+
+
+* topology
+- physical arrangement of the devices 
+- types
+  - bus
+  - ring
+  - connected ring
+  - star (*)
+  - mesh
+
+
+* smart device
+- device with its own OS
+  
+
+* hub/switch/router
+
+- hub
+  - used to create LAN
+  - is a physical (Layer 1) device
+  - does not understand any addressing scheme
+  - concerned with only the electrical signals
+  - repeats the signal coming from one port to all the remaining ports
+  - increases the traffic 
+  - more collision
+  - more data will be lost
+  - degrade the performance
+
+- switch
+  - used to create LAN
+  - is a data link (Layer 2) layer device
+  - is a smart device
+  - OS
+    - Cisco  : Ios
+    - Juniper: JunOS
+  - understands the MAC address 
+  - OS in switch maintain a MAC address table
+  - performance is better than Hub
+
+- router
+  - used to create WAN
+  - is a network layer (layer 3) device
+  - is a smart device
+  - 
+
+
+* casting
+- unicasting  : sending to ONLY ONE device
+- multicasting: sending to multiple (but not all) devices 
+- broadcasting: sending to all the devices connected to the network
+
+
+* network interface card (NIC)
+  - contains the female network port (RJ45)
+  - types
+    - internal
+      - on-board (on motherboard)
+      - PCI internal NIC
+    - external 
+  - used to connect the device to the network
+  - converts 
+    - binary data to electrical signals
+    - electrical signals to binary data
+
+
+* addressing schemes
+
+- MAC address
+  - addressing scheme used on data link layer 
+  - media access control
+  - used to identify every NIC uniquely 
+  - flashed on the ROM part of the NIC
+  - CAN NOT BE CHANGED
+  - also known as
+    - read only address
+    - physical address
+    - real address
+    - ethernet address
+  - to find MAC address 
+    - windows: ipconfig /all
+    - linux/macOS: ifconfig
+
+  - e.g.
+    
+    78:4f:43:90:13:d0
+
+  - size: 6 bytes = 6 x 8 = 48 bits
+  - importance
+    - group of first 3 bytes:
+      - will identify the manufacturer 
+      - e.g. 78:4f:43
+      - use
+        - https://hwaddress.com
+    - group of last 3 bytes
+      - will identify the NIC uniquely
+      - e.g. 90:13:d0
+
+
+- IP address (***)
+  - is the way to identify a device uniquely
+  - configured by the OS of the device 
+  - is also called as 
+    - logical address
+  - a device may change the IP address
+  - to assign the IP address
+    - static
+      - configured manually
+      - do not change automatically
+    - dynamic 
+      - configured automatically 
+      - uses DHCP (Dynamic Host Configuration Protocol)
+      - IP address may change over the period
+  - to find the IP address
+    - windows: ipconfig
+    - linux/macOS: ifconfig
+  - versions
+    - IPv4: 4 bytes = 32 bits
+    - IPv6: 128 bits
+  - e.g.
+
+    Decimal: 172.18.5.135
+    Binary : 10101100.00010010.00000101.10000111
+
+  - rules
+    - the size: 4 bytes
+    - the number must be in the range of 0-255
+
+  - types
+    - private
+      - is used only within the local network
+      - can not be used outside of the LAN
+    - public
+      - is used for communicating with other devices over internet
+      - is required for internet connectivity
+
+  - maximum IP addresses: 2^32 = 4b
+  - smallest: 
+    - binary : 00000000.00000000.00000000.00000000
+    - decimal: 0.0.0.0
+  - largest : 
+    - binary : 11111111.11111111.11111111.11111111
+    - decimal: 255.255.255.255
+
+  - IP addressing
+    - process of generating and assigning to the machines
+    - types
+      - classfull
+      - classless
+
+  - network mask
+    - used to calculate the network address from the IP address
+
+  - classfull IP addressing 
+
+    - Class A
+      - range: 0.0.0.0 to 127.255.255.255
+      - private range: 10.0.0.0 to 10.255.255.255
+      - network mask: 255.0.0.0 : 11111111.00000000.00000000.00000000
+      - # networks: 2^7 = 128
+      - # hosts per network: 2^24 = 16m
+      - suited for large organization like amazon, google and Apple
+      - reserved
+        - 127.0.0.0 to 127.255.255.255
+          - reserved for loopback address
+          - 127.0.0.1: loopback address of localhost (same machine)
+        - per network
+          - the first ip address of the network
+            - reserved for network id/address
+          - the last ip address of the network:
+            - reserved for broadcast address
+
+    - Class B
+      - range: 128.0.0.0 to 191.255.255.255
+      - private range: 172.16.0.0. to 172.31.255.255
+      - network mask: 255.255.0.0: 11111111.11111111.00000000.00000000
+      - # networks: 2^14 = 14K
+      - # hosts per network: 2^16 = 65536
+      - suited for mid scaled organization 
+      - reserved
+        - per network
+          - the first ip address of the network
+            - reserved for network id/address
+          - the last ip address of the network:
+            - reserved for broadcast address
+
+    - Class C
+      - range: 192.0.0.0 to 223.255.255.255
+      - private range: 192.168.0.0 to 192.168.255.255
+      - network mask: 255.255.255.0: 11111111.11111111.11111111.00000000
+      - # networks: 2^21 = 2m
+      - # hosts per network: 2^8 = 256
+      - suited for small office or home
+      - reserved
+        - per network
+          - the first ip address of the network
+            - reserved for network id/address
+          - the last ip address of the network:
+            - reserved for broadcast address
+
+
+    - Class D
+      - range: 224.0.0.0 to 239.255.255.255
+      - reserved for multicasting 
+
+    - Class E
+      - range: 240.0.0.0 to 255.255.255.255
+      - reserved for RnD
+
+
+IP: 192.168.3.10
+NM: 255.255.255.0
+------------------
+NA: 192.168.3.0
+
+
+IP: 192.168.3.210
+NM: 255.255.255.0
+------------------
+NA: 192.168.3.0
+
+Network address: 192.168.3.0
+Broadcast      : 192.168.3.255
+# hosts        : 256
+Max IP range   : 192.168.3.0 - 192.168.3.255
+Valid range    : 192.168.3.1 - 192.168.3.254
+
+
+  - classless IP address
+    - also called Variable Length Subnet Mask (VLSM)
+    - uses Classless Inter Domain Routing (CIDR)
+
+
+00000000: 0
+10000000: 128
+11000000: 192
+11100000: 224
+11110000: 240
+11111000: 248
+11111100: 252
+11111110: 254
+11111111: 255
+
+
+
+* OSI model
+
+- application
+- presentation
+- session
+- transport
+- network
+  - uses IP address
+- data link
+  - llc
+  - mac
+- physical
+
+
+* TCP/IP model
+
+
+* question types
+
+- find out the wrong IP address
+  - 10.3.45.6
+  - 109.56.67.89
+  - 257.56.7.8   <- (257)
+  - 56.8.93.8
+
+- find out the class of given IP address
+  - 10.24.57.7  : Class A
+  - 172.45.6.7  : Class B
+  - 192.168.3.5 : Class C
+
+- what is the type of IP address
+  - 17.3.6.6    : public
+  - 10.24.57.7  : private
+  - 180.4.6.7   : public
+  - 172.45.6.7  : public
+  - 172.25.6.7  : private
+  - 192.168.3.5 : private
+  - 200.4.6.7   : public
+
+
+- find the network address/Id
+
+  - 17.35.67.8
+
+Class       : A
+IP address  : 17.35.67.8  : 00010001.00100011.01000011.00001000
+Network mask: 255.0.0.0   : 11111111.00000000.00000000.00000000
+---------------------------------------------------------------
+Network Id  : 17.0.0.0    : 00010001.00000000.00000000.00000000
+
+
+  - 172.59.8.9
+
+Class	    : B
+IP address  : 172.59.8.9
+Network mask: 255.255.0.0
+--------------------------
+Network Id  : 172.59.0.0
+
+
+  - 192.168.4.6
+
+Class	    : C
+IP address  : 192.168.4.6
+Network mask: 255.255.255.0
+---------------------------
+Network Id  : 192.168.4.0
+
+
+
+- which class is used in case of a network with
+  - 100 machine: Class C (< 256)
+  - 1000 machine: Class B (< 65K)
+  - 100000 machine: Class A (< 16m)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

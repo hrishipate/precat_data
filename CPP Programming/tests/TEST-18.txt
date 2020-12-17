@@ -1,0 +1,130 @@
+1. How will you free the memory allocated by the following program?
+#include<iostream>
+int main()
+{int *p=NULL;
+    p=new int[10];
+    return 0;
+}
+Answers
+1. memfree(int p);
+2. dealloc(p);
+3. malloc(p, 0);
+4. delete[](ptr);    *****
+5. free(p);   
+
+2. which of the following statements is incorrect  about reference in c++?
+Answers
+1. we can create reference to referencre   *****
+2. once reference is initialized we cannot change it’s referent
+3. Initialization of refernce at the time of declaration is mandatory
+4. Reference is used to create alias for an existing object
+5. none of the above
+
+3. which of the following statements is correct?
+Answers
+1. 'new' operator reduces complexity of malloc(),so no need to type cast.
+2. Using 'new' operator we can allocate memory for user defined types
+3. Using new operator we can reserved space on stack segment,heap segment as well as data segment.
+4. Using new operator we can allocate memory for single variable as well as array
+5. All of the above     ****
+
+4. What is output of following code?   
+ #include<iostream>  
+ using namespace std; 
+ int main()  
+ {int num1=10; 
+ int &num2=10;  ++num2; 
+ cout<<”Num2::”<<num2; 
+ return 0;                                                                                                                                                                                                                    }
+Answers
+1. 10
+2. 11
+3. compile time error  *****
+4. none of the above
+
+5. What is value of arr[1][2],if we wnter elements 10, 25, 45, 14 ,8,3 successively?                                         #include<iostream>
+using namespace std;
+int main( void )
+{
+	int ** arr = new int*[ 2 ];
+	for( int index = 0; index < 2; ++ index )
+		arr[ index ] = new int[ 3];
+
+	for( int row = 0; row < 2; ++ row )
+	{
+		for( int col = 0; col < 3; ++ col )
+		{
+			cout<<"Enter element	:	";
+			cin>>arr[ row ][ col ];
+		}
+	}
+	for( int row = 0; row < 2; ++ row )
+	{
+		for( int col = 0; col < 3; ++ col )
+			cout<<arr[ row ][ col ]<<"	";
+		cout<<endl;
+	}
+
+	for( int index = 0; index < 2; ++ index )
+		delete[] arr[ index ];
+	delete[] arr;
+	arr = NULL;
+	return 0;
+}
+Answers
+1. 45
+2. 3  ****
+3. 25
+4. 10
+
+6. what does the new operator if it fails to allocate memory?
+Answers
+1. If new operator fails to allocate memory,it returns the null pointer
+2. If new operator fails to allocate memory,it throws bad_alloc exception. *****
+3. If new operator fails to allocate memory,then program will abnormally terminates
+4. none of the above
+
+7. Which of the following statements is incorrect?
+    1. If we create object using malloc() then costructor gets called.
+    2. Using malloc() we can allocate memory on only heap section.
+Answers
+1. Only 1 is incorrect  *****
+2. Only 2 is incorrect.
+3. Both 1 and 2 are incorrect.
+4. none of the above
+
+8. Which of the following syntax is correct  to allocate memory for single dimensional array having 3 elements using new operator?.
+a. int *ptr=new int(3);
+    cout<<*ptr;
+b. int *ptr=new int[3];
+c. int *ptr=new int[];
+Answers
+1. Both a and b are correct.
+2. Only a is correct.
+3. Only b is correct  *****
+4. Only c is correct
+
+9. what is meaning of following statement? 
+ #include<iostream>
+ using namespace std; 
+ int main()  
+ { 
+ int *ptr=new int(3); 
+ return 0; 
+ }
+ Answers
+1. Type
+2. we are allocating memory for single variable and memory will be initialized with garbage value.
+3. Allocating memory for single dimensional array of size 3
+4. we are allocating memory for single variable and memory will be initialized with 3.   *****
+5. none of the mentioned
+
+10. Which of the following statements is correct?
+
+    1. A reference is not a constant pointer.
+    2. A referenced is automatically de-referenced.
+Answers
+1. Only 1 is correct.
+2. Only 2 is correct.  *****
+3. Both 1 and 2 are correct.
+4. Both 1 and 2 are incorrect.

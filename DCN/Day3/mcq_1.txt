@@ -1,0 +1,98 @@
+- Which of the following IEEE standard defines ethernet frame?
+a. IEEE 802.2
+b. IEEE 802.3
+c. IEEE 802.4
+d. None of the above
+
+- Which of the following topology requires a central controller or hub?
+a. Mesh
+b. Bus
+c. Star
+d. Ring
+
+- ---------- has slowest transmission speed as compared to others.
+a. Twisted pair cable
+b. Coaxial cable
+c. Fiber optic cable
+d. None of the above
+
+- Each computer on an ethernet LAN id identified by a ______ address.
+a. 24 bit
+b. 32 bit
+c. 48 bit
+d. none of the above
+
+- For which of the following address, network interface cards need to be specially programmed.
+a. Unicast
+b. Multicast
+c. Broadcast
+d. all of the above
+
+- Which of the following topology requires repeaters to be placed to connect nodes?
+a. Mesh
+b. Star
+c. Bus
+d. Ring
+
+- Which fields are contained within an IEEE Ethernet frame header?
+a. Source and destination MAC address.
+b. Source and destination Network Address.
+c. Source and destination MAC address and Source and destination Network Address.
+d. All of the above
+
+- What type of cable do you use to connect a Router to Switch?
+a. Electric cable
+b. Rolled 
+c. UTP/STP
+d. Crossover with a CSU/DSU
+
+- Which cable used for long distance?
+a. STP
+b. UTP	
+c. Coaxial cable
+d. Fiber-optic cable
+
+- Which of the following is not Media Access Control method in LAN?
+a. Ethernet
+b. Token Ring
+c. Both a and b
+d. None of the above
+ 
+- NIC stands for 
+a. Network Interface Card
+b. National Internet Code
+c. Network Isolated Card
+d. Network International Code
+
+- Fast ethernet also called as
+a. standard 802.3z
+b. standard 802.3u
+c. standard 802.3s
+d. standard 802.3y
+
+- In a network with 25 computers, which topology would require the most expensive cabling
+a. Bus
+b. Star
+c. Mesh
+d. Ring
+
+- Which of the following item is not used in Local Area Networks(LAN)?
+a. Computer
+b. Modem
+c. Printer
+d. Cable
+
+- Which technique is used in CSMA/CD networks in order to avoid repeated collisions?
+a. collision avoidance
+b. crash prevent
+c. exponential back-off
+d. exponential collisions
+Answer: d
+
+- In CSMA/CD, a node monitors the medium after it sends a frame to see if the transmission was successful.
+a. False
+b. True
+
+
+
+

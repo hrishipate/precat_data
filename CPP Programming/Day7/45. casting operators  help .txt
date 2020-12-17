@@ -1,0 +1,24 @@
+1. reinterpret_cast
+it is used to convert pointer of any type into  pointer of any other type.
+if you want to do type conversion between incompatible types then we should use
+reinterpret_cast operator.
+
+example : to access private data members of class using pointers
+
+2. const_cast
+
+if we want to convert pointer to constant object into pointer to non constant object
+we should use const_const operator
+
+
+3.static_cast
+if we want to do type conversion between compatibale types then we should use
+static_cast operator
+
+4.
+dynamic_cast
+during type conversion if we want to check both that is inheritance relationship and type conversion is valid or not. we should use dynamic_cast operator.
+
+to use dynamic_cast operator base class must be polymorphic this is it should have atleast one virtual function.
+in case of polymorphic type, if we want to do downcasting then we should use dynamic_cast operator.
+ 

@@ -1,0 +1,85 @@
+string function
+
+1.strlen (string length)
+
+strlen function calculates the length of the string pointed to by s, excluding the terminating null.
+
+function decl for strlen -		
+size_t strlen(const char *s);
+		
+
+2. strchr (search character in the string)
+
+	strchr function returns a pointer to the first occurrence of the character c 
+in the string s. if character c is not found in string s it return NULL. 
+
+function decl  for strchr
+	char *strchr(const char *s, int c);
+
+return 10 ; // int
+return 10.2; // double
+return 10.2f; //float
+return;   // void
+return "sunbeam"; return type char*
+
+
+3. strcpy (string copy)
+   //dest=src;
+	strcpy function copies src to dest string and return the addrress of dest. 
+
+function decl  for strchr
+	char *strcpy(char *dest, const char *src);
+
+
+4. strcat (string concate)
+
+	strcat function appends the src string to the dest string and return the starting address of dest.
+
+function decl  for strcat
+	char *strcat(char *dest, const char *src);
+
+5. strcmp -- compare two strings
+	it returns the difference between non matching characters.
+
+function decl  for strcmp
+	int strcmp(const char *s1, const char *s2);
+
+    if difference >  0  then s1 bigger string
+    if difference <  0  then s2 bigger string
+    if difference == 0  then both strings are same
+
+   // strcmpi //TC/VS
+6. (gcc)strcasecmp -- compare two strings by ignoreing the cases
+	
+	it returns the difference between not matching characters. 
+
+function decl  for strcasecmp
+	int strcasecmp(const char *s1, const char *s2);
+
+    if difference >  0  then s1 bigger string
+    if difference <  0  then s2 bigger string
+    if difference == 0  then both strings are same
+
+7. strstr --  search substring in string
+
+	search the first occurrence of the substring in  the string if found return starting address in string where it found  the substring and if not found returns NULL.
+
+   char *strstr(const char *string, const char *substring);
+
+  //return "sunbeam"; return type will be  char*
+
+	TC/VS
+	strupr --> convet upper
+	strlwr  -->> lower
+	strrev   -->>> rev
+
+
+
+
+
+
+
+
+
+
+
